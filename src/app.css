@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+
+@font-face {
+	font-family: 'ADLaM Display';
+	src: url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+}
+
+@font-face {
+	font-family: 'Onest';
+	src: url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+}
+
+@layer base {
+    body {
+        @apply bg-black;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
