@@ -10,7 +10,7 @@
     }
 </script>
 
-<nav class="bg-black shadow-md flex flex-row justify-between items-center w-screen py-5 px-4 sm:px-10 fixed top-0 left-0 right-0 z-50">
+<nav class="bg-black shadow-md flex flex-row justify-between items-center w-screen py-5 px-4 sm:px-10 fixed top-0 left-0 right-0 z-50 h-20 md:h-auto">
     <p class="text-white text-2xl sm:text-4xl font-adlam">
         Univoice
     </p>

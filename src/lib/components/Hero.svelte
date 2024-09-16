@@ -9,7 +9,7 @@
     const marqueeLoop = [...marqueeItems, ...marqueeItems];
 </script>
 
-<section class="relative h-screen bg-black overflow-hidden">
+<section class="relative h-screen bg-black overflow-hidden mt-20">
     <div class="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px] opacity-50"/>
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#ffffff30_0%,transparent_70%)] z-10"/>
 
@@ -18,7 +18,7 @@
             <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>
             Assistant vocal IA
         </div>
-        <h1 class="text-4xl md:text-5xl xl:text-7xl font-extralight mb-6 max-w-5xl font-onest leading-relaxed">
+        <h1 class="text-4xl md:text-5xl xl:text-7xl font-extralight mb-6 max-w-5xl font-onest md:leading-relaxed">
             Nous créons des agents vocaux intelligents sur mesure pour vos besoins.
         </h1>
         <p class="text-lg md:text-xl mb-8 max-w-2xl font-onest text-gray-300">

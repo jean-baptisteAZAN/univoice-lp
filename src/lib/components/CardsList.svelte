@@ -35,9 +35,9 @@
     ]
 </script>
 
-<section class="relative h-screen bg-black overflow-hidden">
+<section class="relative bg-black overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,#ffffff30_0%,transparent_70%)] z-10"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 space-y-14 text-center text-white">
+    <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 space-y-5 md:space-y-14 text-center text-white mt-10 md:mt-0">
         <p class="uppercase bg-[#272827] p-4 flex flex-row items-center rounded-lg font-onest font-light">
             <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>
             Característiques
