@@ -2,7 +2,6 @@
     import Maincta from "$lib/components/Maincta.svelte";
 </script>
 
-
 <section class="relative py-20 md:py-40 bg-black overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,#ffffff30_0%,transparent_70%)] z-10"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 space-y-14 text-center text-white ">
