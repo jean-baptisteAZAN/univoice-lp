@@ -1,21 +1,21 @@
 <script>
     import Maincta from "$lib/components/Maincta.svelte";
     const integrations = [
-      { name: 'Hubspot', category: 'CRM', logo: '/hubspot.png' },
-      { name: 'Vonage', category: 'Opérateur', logo: '/hubspot.png' },
-      { name: 'Open AI', category: 'LLM', logo: '/hubspot.png' },
-      { name: 'Salesforce', category: 'CRM', logo: '/hubspot.png' },
-      { name: 'Plivo', category: 'Opérateur', logo: '/hubspot.png' },
-      { name: 'Google calendar', category: 'Agenda', logo: '/hubspot.png' },
-      { name: 'Twilio', category: 'Opérateur', logo: '/hubspot.png' },
-      { name: 'Mistral', category: 'LLM', logo: '/hubspot.png' },
-      { name: 'Zapier', category: 'Intégrateur', logo: '/hubspot.png' },
+      { name: 'Hubspot', category: 'CRM', logo: '/hubspotIcon.png' },
+      { name: 'Vonage', category: 'Opérateur', logo: '/vonage.png' },
+      { name: 'Open AI', category: 'LLM', logo: '/openai.png' },
+      { name: 'Salesforce', category: 'CRM', logo: '/salesforce.png' },
+      { name: 'Plivo', category: 'Opérateur', logo: 'https://framerusercontent.com/images/yQfNAUzXc6bfmuiuSxxlbno2w.png' },
+      { name: 'Google calendar', category: 'Agenda', logo: '/calendar.png' },
+      { name: 'Twilio', category: 'Opérateur', logo: '/twilioIcon.png' },
+      { name: 'Mistral', category: 'LLM', logo: '/mistral.png' },
+      { name: 'Zapier', category: 'Intégrateur', logo: '/zapierIcon.png' },
     ];
-  </script>
+</script>
 
-<section class="bg-black text-white py-16 px-4 md:px-8 lg:px-20 relative">
+<section class="bg-black text-white md:py-16 px-4 md:px-8 lg:px-20 relative">
 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,#ffffff30_0%,transparent_70%)] z-10"></div>
-<div class="max-w-screen mx-auto flex flex-col md:flex-row gap-24 items-center">
+<div class="max-w-screen mx-auto flex flex-col md:flex-row gap-10 md:gap-24 items-center">
     <div class="mb-8 w-full flex flex-col items-center md:items-start justify-center md:w-[40%] space-y-10">
         <p class="uppercase bg-[#272827] p-4 w-fit flex flex-row items-center rounded-lg font-onest font-light">
             <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>

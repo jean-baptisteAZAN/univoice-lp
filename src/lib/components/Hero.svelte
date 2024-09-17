@@ -14,17 +14,17 @@
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#ffffff30_0%,transparent_70%)] z-10"/>
 
     <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white">
-        <div class="uppercase bg-[#272827] p-4 flex flex-row items-center rounded-lg font-onest font-light">
+        <div class="uppercase bg-[#272827] p-2 sm:p-4 flex flex-row items-center rounded-lg font-onest font-light">
             <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>
             Assistant vocal IA
         </div>
-        <h1 class="text-4xl md:text-5xl xl:text-7xl font-extralight mb-6 max-w-5xl font-onest md:leading-relaxed">
+        <h1 class="text-2xl sm:text-4xl md:text-5xl xl:text-7xl font-extralight mb-6 max-w-5xl font-onest md:leading-relaxed">
             Nous créons des agents vocaux intelligents sur mesure pour vos besoins.
         </h1>
         <p class="text-lg md:text-xl mb-8 max-w-2xl font-onest text-gray-300">
             Notre IA optimise vos appels, améliorant l'engagement, la satisfaction et la réactivité de vos services.
         </p>
-    <div class="flex flex-col sm:flex-row gap-4">
+    <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
         <button class="px-6 py-3 bg-transparent border border-white rounded-md hover:bg-white/10 transition-colors">
         Contactez-nous
         </button>
@@ -34,7 +34,7 @@
     <p class="text-center text-2xl font-onest font-light mt-10">
         Approuvé par
     </p>
-    <div class="relative overflow-hidden max-w-6xl mt-8">
+    <div class="relative overflow-hidden max-w-6xl  md:mt-8">
         <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10"></div>
         <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10"></div>
         <div class="flex animate-marquee whitespace-nowrap">
