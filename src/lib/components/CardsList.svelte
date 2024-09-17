@@ -42,7 +42,7 @@
 </script>
 
 <IntersectionObserver once element={sectionElement} bind:intersecting threshold={0.1}>
-    <section bind:this={sectionElement} class="relative bg-black overflow-hidden md:py-20">
+    <section id="Caracteristics" bind:this={sectionElement} class="relative bg-black overflow-hidden md:py-20">
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,#ffffff30_0%,transparent_70%)] z-10"></div>
         <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 space-y-5 md:space-y-14 text-center text-white mt-10 md:mt-0 py-5">
             {#if intersecting}
@@ -58,7 +58,7 @@
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 md:px-14 w-full">
                     {#each cards as card, index}
-                        <div 
+                        <div
                             in:scale="{{ duration: 600, delay: 800 + index * 100, easing: quintOut }}"
                             class="p-4 rounded-lg shadow-md border-2 border-[#272827] flex flex-col text-left space-y-2 transition-all duration-300 hover:bg-gray-900 hover:border-[#c3f261] hover:scale-105"
                         >

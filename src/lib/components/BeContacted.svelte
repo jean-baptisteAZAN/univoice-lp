@@ -29,7 +29,7 @@
               <Calendar class="w-5 h-5 mr-2 text-[#c3f261]" />
               <span class="font-onest font-light uppercase">Prenez rendez-vous</span>
             </div>
-            <h2 in:fly="{{ y: 50, duration: 1000, delay: 400 }}" class="text-4xl md:text-5xl font-extralight font-onest leading-tight">
+            <h2 in:fly="{{ y: 50, duration: 1000, delay: 400 }}" class="text-2xl sm:text-4xl md:text-5xl font-extralight mb-6 max-w-5xl font-onest">
               Transformez vos <span class="text-[#c3f261]">interactions vocales</span> avec l'IA
             </h2>
             <p in:fly="{{ y: 50, duration: 1000, delay: 600 }}" class="text-lg md:text-xl font-onest text-gray-300">
@@ -37,10 +37,10 @@
             </p>
             <div in:fly="{{ y: 50, duration: 1000, delay: 800 }}" class="flex flex-col sm:flex-row w-fit gap-4 ">
               <Maincta />
-              <button class="group px-6 py-3 bg-transparent border border-white rounded-md hover:bg-white/10 transition-colors font-onest flex items-center">
+              <a href="#Caracteristics" class="group px-6 py-3 bg-transparent border border-white rounded-md hover:bg-white/10 transition-colors font-onest flex items-center">
                 En savoir plus
                 <ChevronRight class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-              </button>
+              </a>
             </div>
           {/if}
         </div>

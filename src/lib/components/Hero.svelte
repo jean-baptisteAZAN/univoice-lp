@@ -3,7 +3,8 @@
     const marqueeItems = [
         "/hubspot.png",
         "/twilio.png",
-        "/zapier.png"
+        "/zapier.png",
+        "/microsoft.png"
     ];
     const marqueeLoop = [...marqueeItems, ...marqueeItems];
 </script>
@@ -17,19 +18,19 @@
             <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>
             Assistant vocal IA
         </div>
-        <h1 class="text-2xl sm:text-4xl md:text-5xl xl:text-7xl font-extralight mb-6 max-w-5xl font-onest md:leading-relaxed">
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-extralight mb-6 max-w-5xl font-onest">
             Nous créons des agents vocaux intelligents sur mesure pour vos besoins.
         </h1>
-        <p class="text-lg md:text-xl mb-8 max-w-2xl font-onest text-gray-300">
+        <p class="text-lg md:text-lg mb-8 max-w-2xl font-onest text-gray-300">
             Notre IA optimise vos appels, améliorant l'engagement, la satisfaction et la réactivité de vos services.
         </p>
     <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
-        <button class="px-6 py-3 bg-transparent border border-white rounded-md hover:bg-white/10 transition-colors">
+        <a href="/contact" class="px-6 py-3 bg-transparent border border-white rounded-md hover:bg-white/10 transition-colors text-lg">
         Contactez-nous
-        </button>
+        </a>
         <Maincta />
     </div>
-    <img src="/eura.jpg" alt="Nous sommes partenaires d'Euratechnologies" class="w-80 rounded-lg mt-10" />
+    <img src="/eura.jpg" alt="Nous sommes partenaires d'Euratechnologies" class="w-48 rounded-lg mt-10" />
     <p class="text-center text-2xl font-onest font-light mt-10">
         Approuvé par
     </p>

@@ -10,18 +10,18 @@
     }
 </script>
 
-<nav class="bg-black shadow-md flex flex-row justify-between items-center w-screen py-5 px-4 sm:px-10 fixed top-0 left-0 right-0 z-50 h-20 md:h-auto">
+<nav class="bg-black shadow-md flex flex-row justify-between items-center w-screen py-4 px-4 sm:px-10 fixed top-0 left-0 right-0 z-[1000] h-20 md:h-auto">
     <p class="text-white text-2xl sm:text-4xl font-adlam">
         Univoice
     </p>
-    <div class="hidden md:flex flex-row gap-10 text-gray-400 text-xl">
+    <div class="hidden md:flex flex-row gap-10 text-gray-400 text-lg">
         <a href="/" class="hover:text-gray-200">
-            Característiques
+            Caracteristiques
         </a>
-        <a href="/" class="hover:text-gray-200">
+        <a href="#Integrations" class="hover:text-gray-200">
             Intégrations
         </a>
-        <a href="/" class="hover:text-gray-200">
+        <a href="/contact" class="hover:text-gray-200">
             Contactez-nous
         </a>
     </div>
@@ -43,8 +43,8 @@
     >
         <div class="flex flex-col items-center gap-6 text-white text-xl">
             <a href="/" class="hover:text-gray-200">Característiques</a>
-            <a href="/" class="hover:text-gray-200">Intégrations</a>
-            <a href="/" class="hover:text-gray-200">Contactez-nous</a>
+            <a href="#Integrations" class="hover:text-gray-200">Intégrations</a>
+            <a href="/contact" class="hover:text-gray-200">Contactez-nous</a>
             <Maincta />
         </div>
     </div>
