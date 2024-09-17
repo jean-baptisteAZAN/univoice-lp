@@ -1,6 +1,5 @@
 <script>
     import Maincta from '$lib/components/Maincta.svelte';
-
     const marqueeItems = [
         "/hubspot.png",
         "/twilio.png",
@@ -39,7 +38,7 @@
         <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10"></div>
         <div class="flex animate-marquee whitespace-nowrap">
             {#each marqueeLoop as item, i}
-                <img src={item} class="w-40 mx-20" alt="Nos partenaires"/>
+                <img src={item} class="w-40 mx-10 object-contain" alt="Nos partenaires"/>
             {/each}
         </div>
     </div>
