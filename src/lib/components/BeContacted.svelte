@@ -3,20 +3,28 @@
     import { fade, fly, scale } from 'svelte/transition';
     import { elasticOut } from 'svelte/easing';
     import Maincta from '$lib/components/Maincta.svelte';
-    import { Calendar, ChevronRight, Clock } from 'lucide-svelte';
-  
+    import { Calendar, ChevronRight } from 'lucide-svelte';
+    import { onMount } from 'svelte';
+
     let ctaElement;
     let intersecting = false;
-  
-    const currentDate = new Date();
-    const currentMonth = currentDate.toLocaleString('default', { month: 'long' });
-    const currentYear = currentDate.getFullYear();
-    const currentDay = currentDate.getDate();
+    let calendlyLoaded = false;
 
-    const weekDays = ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Di'];
-    const monthDays = Array.from({ length: 31 }, (_, i) => i + 1);
+    function loadCalendly() {
+        if (!calendlyLoaded) {
+            const script = document.createElement('script');
+            script.src = 'https://assets.calendly.com/assets/external/widget.js';
+            script.onload = () => {
+                calendlyLoaded = true;
+            };
+            document.head.appendChild(script);
+        }
+    }
+    onMount(() => {
+        loadCalendly();
+    });
 </script>
-  
+
 <IntersectionObserver once element={ctaElement} bind:intersecting threshold={0.1}>
   <section bind:this={ctaElement} class="relative py-20 bg-black text-white overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,#ffffff30_0%,transparent_70%)] z-10"></div>
@@ -47,29 +55,10 @@
         <div class="relative">
           {#if intersecting}
             <div in:scale="{{ duration: 1000, delay: 1000, easing: elasticOut }}" class="bg-[#272827] rounded-lg p-8 shadow-xl">
-              <div class="bg-[#272827] rounded-t-lg p-4">
-                <h3 class="text-2xl font-onest mb-2 text-[#c3f261]">{currentMonth} {currentYear}</h3>
-                <div class="grid grid-cols-7 gap-2 text-center font-onest text-sm">
-                  {#each weekDays as day}
-                    <div class="text-gray-400">{day}</div>
-                  {/each}
-                </div>
-              </div>
-              <div class="bg-gray-900 rounded-b-lg p-4">
-                <div class="grid grid-cols-7 gap-2 text-center font-onest">
-                  {#each monthDays as day}
-                    <div
-                      class="w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300
-                      {day === currentDay ? 'bg-[#c3f261] text-gray-900 font-bold' : 'hover:bg-gray-700'}"
-                    >
-                      {day}
-                    </div>
-                  {/each}
-                </div>
-              </div>
-              <div class="mt-6 flex items-center justify-center text-[#c3f261]">
-                <Clock class="w-5 h-5 mr-2" />
-                <span class="font-onest">Prochaine disponibilité : Demain, 10:00</span>
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/matthieu-hubert/30min"
+                style="min-width:320px;height:630px;">
               </div>
             </div>
           {/if}
@@ -78,3 +67,7 @@
     </div>
   </section>
 </IntersectionObserver>
+
+<style>
+  /* You can add any additional styles here if needed */
+</style>
