@@ -8,7 +8,7 @@
     const marqueeLoop = [...marqueeItems, ...marqueeItems];
 </script>
 
-<section class="relative h-screen bg-black overflow-hidden mt-20">
+<section class="relative h-fit py-5 md:py-10 bg-black overflow-hidden mt-20">
     <div class="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px] opacity-50"/>
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#ffffff30_0%,transparent_70%)] z-10"/>
 
