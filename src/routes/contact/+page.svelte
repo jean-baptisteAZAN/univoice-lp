@@ -40,7 +40,7 @@
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div in:fly="{{ x: -50, duration: 1000, delay: 400 }}" class="px-5">
+                <div in:fly="{{ x: -50, duration: 1000, delay: 400 }}" class="py-5 md:py-0 md:px-5">
                     <form on:submit|preventDefault={handleSubmit} class="space-y-6">
                         <div class="flex flex-row items-center justify-center w-full gap-4">
                             <div class="w-full">

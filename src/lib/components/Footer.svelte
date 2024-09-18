@@ -17,7 +17,7 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-col md:flex-row gap-5">
+    <div class="flex flex-col md:flex-row gap-5 text-center md:text-left">
         <a href="https://zenith-cheetah-7e1.notion.site/Politique-de-Confidentialit-62407f32cf614b1fa672082cdf3b2a10" target="_blank" class="text-gray-400 text-sm hover:text-gray-200">
             Politique de confidentialité
         </a>
