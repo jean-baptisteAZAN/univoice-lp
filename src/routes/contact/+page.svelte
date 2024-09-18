@@ -17,52 +17,50 @@
       message = '';
     }
     const contactInfo = [
-      { icon: Phone, text: '+33 1 23 45 67 89' },
-      { icon: Mail, text: 'contact@votreentreprise.com' },
-      { icon: MapPin, text: '123 Rue de l\'Innovation, 75000 Paris' },
+      { icon: Phone, text: '+33 7 87 44 14 56' },
+      { icon: Mail, text: 'contact@univoice-ai.com' },
     ];
 </script>
 
 <IntersectionObserver once element={formElement} bind:intersecting threshold={0.1}>
     <section bind:this={formElement} class="relative bg-black overflow-hidden py-20 mt-20">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,#ffffff30_0%,transparent_70%)] z-10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,#ffffff30_0%,transparent_70%)] z-10"/>
         <div class="relative z-10 container mx-auto px-4">
         {#if intersecting}
-            <div in:fly="{{ y: -50, duration: 1000, delay: 200 }}" class="text-center mb-12">
-            <p class=" bg-[#272827] p-4 inline-flex items-center rounded-lg font-onest font-light text-white">
-                <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>
-                Contactez-nous
-            </p>
-            <h1 class="text-4xl md:text-5xl xl:text-7xl font-extralight mt-6 text-white font-onest">
-                Parlons de votre projet
-            </h1>
-            <p class="text-lg md:text-xl mt-4 text-gray-300 font-onest max-w-2xl mx-auto">
-                Nous sommes là pour répondre à vos questions et vous aider à transformer votre service client avec l'IA.
-            </p>
+            <div in:fly="{{ y: -50, duration: 1000, delay: 200 }}" class="text-center flex flex-col items-center justify-center gap-2">
+                <p class=" bg-[#272827] p-4 inline-flex items-center rounded-lg font-onest font-light text-white">
+                    <span class="w-2 h-2 bg-[#c3f261] rounded-full mr-2"></span>
+                    Contactez-nous
+                </p>
+                <h1 class="text-2xl sm:text-4xl md:text-5xl font-extralight mb-6 max-w-5xl font-onest text-white">
+                    Faites passer votre entreprise au niveau supérieur avec UniVoice
+                </h1>
+                <p class="text-lg md:text-lg mb-8 max-w-2xl font-onest text-gray-400">
+                    Inscrivez-vous à une démonstration avec notre équipe commerciale pour voir ce que univoice peut faire pour votre entreprise.
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div in:fly="{{ x: -50, duration: 1000, delay: 400 }}" class="bg-[#272827] p-8 rounded-lg">
-                <form on:submit|preventDefault={handleSubmit} class="space-y-6">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-gray-300">Nom</label>
-                    <input type="text" id="name" bind:value={name} required
-                            class="mt-1 block w-full rounded-md bg-[#272827] border-2 border-[#7f896b] text-white focus:ring focus:ring-[#c3f261] focus:ring-opacity-50">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div in:fly="{{ x: -50, duration: 1000, delay: 400 }}" class="px-5">
+                    <form on:submit|preventDefault={handleSubmit} class="space-y-6">
+                        <div class="flex flex-row items-center justify-center w-full gap-4">
+                            <div class="w-full">
+                                <input type="text" id="name" bind:value={name} required placeholder="Nom"
+                                        class="w-full rounded-lg bg-[#272827] p-4 text-white ">
+                            </div>
+                            <div class="w-full">
+                                <input type="email" id="email" bind:value={email} required placeholder="Email"
+                                        class="w-full rounded-lg bg-[#272827] p-4 text-white ">
+                            </div>
+                        </div>
+                    <div>
+                        <textarea id="message" bind:value={message} rows="4" required placeholder="Message"
+                                  class="w-full rounded-lg bg-[#272827] p-4 text-white "/>
+                    </div>
+                    <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-black bg-[#c3f261] hover:bg-[#d4ff7d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c3f261] transition-colors">
+                        Envoyer <Send class="ml-2 w-5 h-5" />
+                    </button>
+                    </form>
                 </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
-                    <input type="email" id="email" bind:value={email} required
-                            class="mt-1 block w-full rounded-md bg-[#272827] border-2 border-[#7f896b] text-white focus:ring focus:ring-[#c3f261] focus:ring-opacity-50">
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
-                    <textarea id="message" bind:value={message} rows="4" required
-                    class="mt-1 block w-full rounded-md bg-[#272827] border-2 border-[#7f896b] text-white focus:ring focus:ring-[#c3f261] focus:ring-opacity-50"></textarea>
-                </div>
-                <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-black bg-[#c3f261] hover:bg-[#d4ff7d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c3f261] transition-colors">
-                    Envoyer <Send class="ml-2 w-5 h-5" />
-                </button>
-                </form>
-            </div>
             <div in:fly="{{ x: 50, duration: 1000, delay: 600 }}" class="space-y-8">
                 {#each contactInfo as { icon, text }}
                 <div class="flex items-center space-x-4 text-white">

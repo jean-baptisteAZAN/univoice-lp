@@ -26,7 +26,7 @@
         </div>
     </div>
     <p class="text-gray-400 w-auto p-5 md:p-0 md:w-[60%]">
-        Anna est conforme aux normes SOC 2 Type 1,
+        Univoice est conforme aux normes SOC 2 Type 1,
          HIPAA et GDPR, certifié par les meilleures
           normes du secteur.
     </p>
