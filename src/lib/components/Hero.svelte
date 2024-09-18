@@ -4,7 +4,9 @@
         "/hubspot.png",
         "/twilio.png",
         "/zapier.png",
-        "/microsoft.png"
+        "/microsoft.png",
+        "/openai-white-lockup.png",
+        "/vonage-white.png",
     ];
     const marqueeLoop = [...marqueeItems, ...marqueeItems];
 </script>

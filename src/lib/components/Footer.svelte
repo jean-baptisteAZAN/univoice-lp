@@ -3,11 +3,11 @@
 <footer class="text-white flex flex-col gap-5 justify-between items-center w-screen py-5 px-4 sm:px-10">
     <div class="flex flex-col md:flex-row justify-between items-center w-full">
         <p class="text-2xl sm:text-4xl font-adlam">
-            Univoice
+            UniVoice
         </p>
         <div class="flex flex-col md:flex-row gap-5 mt-5 md:gap-10 text-center md:text-left text-gray-400 text-xl">
             <a href="/" class="hover:text-gray-200">
-                Característiques
+                Caractérístiques
             </a>
             <a href="/" class="hover:text-gray-200">
                 Intégrations
