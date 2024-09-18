@@ -28,7 +28,7 @@
             Contactez-nous
         </a>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 w-full md:w-[60%] z-50">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 w-full md:w-[60%] z-50">
         {#each integrations as integration}
             <div class="bg-[#1c1c1c] p-4 rounded-lg flex flex-col items-center justify-center text-center border-2 border-[#272827] hover:bg-gray-900 hover:border-[#c3f261] hover:scale-105 transition-all duration-300">
                 <img src={integration.logo} alt={integration.name} class="w-12 h-12 mb-2" />

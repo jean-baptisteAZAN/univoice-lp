@@ -56,7 +56,7 @@
                         <textarea id="message" bind:value={message} rows="4" required placeholder="Message"
                                   class="w-full rounded-lg bg-[#272827] p-4 text-white "/>
                     </div>
-                    <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-black bg-[#c3f261] hover:bg-[#d4ff7d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c3f261] transition-colors">
+                    <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-black bg-[#E9FE38] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c3f261] transition-colors">
                         Envoyer <Send class="ml-2 w-5 h-5" />
                     </button>
                     </form>
@@ -65,7 +65,7 @@
                 {#each contactInfo as { icon, text }}
                 <div class="flex items-center space-x-4 text-white">
                     <div class="bg-[#272827] p-4 rounded-full">
-                    <svelte:component this={icon} class="w-6 h-6 text-[#c3f261]" />
+                    <svelte:component this={icon} class="w-6 h-6 text-[#E9FE38]" />
                     </div>
                     <span class="text-lg">{text}</span>
                 </div>

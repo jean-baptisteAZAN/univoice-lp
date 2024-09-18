@@ -12,11 +12,11 @@
 
 <nav class="bg-black shadow-md flex flex-row justify-between items-center w-screen py-4 px-4 sm:px-10 fixed top-0 left-0 right-0 z-[1000] h-20 md:h-auto">
     <p class="text-white text-2xl sm:text-4xl font-adlam">
-        Univoice
+        UniVoice
     </p>
-    <div class="hidden md:flex flex-row gap-10 text-gray-400 text-lg">
+    <div class="hidden md:flex flex-row gap-10 text-gray-400 text-base">
         <a href="/" class="hover:text-gray-200">
-            Caracteristiques
+            Caractéristiques
         </a>
         <a href="#Integrations" class="hover:text-gray-200">
             Intégrations
