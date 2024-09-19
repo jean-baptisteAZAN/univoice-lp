@@ -19,10 +19,10 @@
         Évoluez avec sérénité
     </h3>
     <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-        <div class="flex flex-row gap-4">
-            <img src="/gdpr.png" alt="GDPR" class="object-contain w-36 bg-white rounded-lg p-2">
-            <img src="/hipaa.png" alt="HIPAA" class="object-contain w-36 bg-white rounded-lg p-2">
-            <img src="/aicpa.png" alt="SOC 2 Type 1" class="object-contain w-36 bg-white rounded-lg p-2">
+        <div class="flex flex-row gap-4 w-full">
+            <img src="/gdpr.png" alt="GDPR" class="object-contain w-20 md:w-36 bg-white rounded-lg p-2">
+            <img src="/hipaa.png" alt="HIPAA" class="object-contain w-20 md:w-36 bg-white rounded-lg p-2">
+            <img src="/aicpa.png" alt="SOC 2 Type 1" class="object-contain w-20 md:w-36 bg-white rounded-lg p-2">
         </div>
         <p class="text-gray-400 w-auto p-5 md:p-0 md:w-[60%] text-center md:text-left">
             Univoice est conforme aux normes SOC 2 Type 1,
