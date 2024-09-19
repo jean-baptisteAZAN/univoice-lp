@@ -33,8 +33,8 @@
         </a>
         <Maincta />
     </div>
-    <img src="/eura.jpg" alt="Nous sommes partenaires d'Euratechnologies" class="w-48 rounded-lg mt-10" />
-    <p class="text-center text-2xl font-onest font-light mt-10">
+    <img src="/eura.jpg" alt="Nous sommes partenaires d'Euratechnologies" class="w-60 rounded-lg mt-5" />
+    <p class="text-center text-xl font-onest font-light mt-10">
         Approuvé par
     </p>
     <div class="relative overflow-hidden max-w-6xl  md:mt-8">
